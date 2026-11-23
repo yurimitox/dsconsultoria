@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estética Samanta Morgenstern · Caçador/SC</title>
+<meta name="description" content="Estética com teste de pele antes de cada procedimento, ambiente acolhedor e resultados impecáveis em Caçador/SC. Nota 5,0 no Google com 57 avaliações. Agende pelo WhatsApp.">
+<meta name="theme-color" content="#5f7560">
+<meta property="og:title" content="Estética Samanta Morgenstern · Caçador/SC">
+<meta property="og:description" content="Teste de pele antes do procedimento e cuidado em cada detalhe. ★ 5,0 no Google · 57 avaliações.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#8fa58e; --sage-2:#b9c8b4; --sage-3:#dde6d8; --sage-d:#4f6450; --forest:#26332a;
+  --paper:#fbfaf5; --paper-2:#f3f1e8; --gold:#c8ad74; --gold-l:#e9d9b0;
+  --text:#2b332c; --soft:#66705f;
+  --serif:'Bodoni Moda',Didot,Georgia,serif; --sans:'Outfit',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1220px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.06;letter-spacing:-.015em}
+h2{font-size:clamp(2.3rem,5vw,4rem);margin:16px 0 18px}
+h2 em,h1 em{font-style:italic;color:var(--sage-d)}
+.tagline{font-size:.75rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--sage-d);display:inline-flex;align-items:center;gap:12px}
+.tagline svg{width:18px;height:18px;color:var(--gold)}
+.lead{font-size:1.08rem;color:var(--soft);max-width:54ch}
+section{position:relative;padding:clamp(80px,10vw,130px) 0}
+.c{text-align:center}.c .lead{margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:.95rem;letter-spacing:.02em;padding:17px 30px;border-radius:14px;border:0;cursor:pointer;transition:transform .3s,box-shadow .3s,background .3s,color .3s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-forest{background:var(--forest);color:var(--paper);box-shadow:0 14px 30px -16px rgba(38,51,42,.8)}
+.btn-forest:hover{background:var(--sage-d);transform:translateY(-3px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--forest);box-shadow:0 14px 30px -16px rgba(200,173,116,.9)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 20px 40px -16px rgba(200,173,116,1)}
+.btn-out{box-shadow:inset 0 0 0 1px rgba(38,51,42,.35);color:var(--forest);background:transparent}
+.btn-out:hover{background:var(--forest);color:var(--paper)}
+.btn-light{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5);color:#fff}
+.btn-light:hover{background:#fff;color:var(--forest)}
+.btn-sm{padding:11px 18px;font-size:.86rem;border-radius:11px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:.4s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:86px;transition:height .4s}
+.nav.scrolled{background:rgba(251,250,245,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(38,51,42,.08)}
+.nav.scrolled .wrap{height:70px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mk{width:40px;height:40px;border-radius:50%;background:var(--forest);color:var(--gold-l);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:1.2rem}
+.logo b{font-family:var(--serif);font-weight:400;font-size:1.25rem;display:block;line-height:1.1}
+.logo small{font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--soft)}
+.nav-links{display:flex;gap:30px;font-size:.92rem}
+.nav-links a{opacity:.8}.nav-links a:hover{opacity:1;color:var(--sage-d)}
+@media(max-width:960px){.nav-links{display:none}.logo small{display:none}}
+
+/* hero */
+.hero{padding:120px 0 60px;min-height:100svh;display:flex;align-items:center}
+.hero-card{position:relative;border-radius:36px;background:radial-gradient(90% 90% at 80% 10%,#a7bba5 0%,#7f977f 45%,#4f6450 100%);color:#fff;overflow:hidden;padding:clamp(48px,7vw,90px) clamp(26px,6vw,80px);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;min-height:620px;isolation:isolate}
+.hero-card .leaf{position:absolute;z-index:-1;color:rgba(255,255,255,.12)}
+.hero-card .l1{width:520px;right:-120px;top:-80px;animation:sway 9s ease-in-out infinite;transform-origin:80% 0}
+.hero-card .l2{width:300px;left:-90px;bottom:-110px;animation:sway 11s ease-in-out infinite reverse;transform-origin:0 100%}
+@keyframes sway{50%{transform:rotate(6deg)}}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);border-radius:100px;padding:8px 16px 8px 8px;font-size:.88rem}
+.pill .g{width:26px;height:26px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.pill .s{color:var(--gold-l);letter-spacing:2px}
+.hero h1{font-size:clamp(2.9rem,7vw,6rem);margin:26px 0 22px}
+.hero h1 em{color:var(--gold-l)}
+.hero .lead{color:rgba(255,255,255,.86)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero-side{display:grid;gap:14px;justify-items:end}
+.oval{width:min(330px,100%);aspect-ratio:3/4;border-radius:50%;border:1px solid rgba(255,255,255,.4);padding:12px;position:relative}
+.oval .ph{width:100%;height:100%;border-radius:50%;background:linear-gradient(170deg,#dde6d8,#8fa58e 60%,#4f6450)}
+.oval .badge{position:absolute;left:-30px;bottom:30px;background:var(--paper);color:var(--forest);border-radius:18px;padding:14px 18px;box-shadow:0 20px 40px -20px rgba(0,0,0,.5);display:flex;gap:12px;align-items:center;font-size:.86rem;line-height:1.3}
+.oval .badge svg{width:30px;height:30px;color:var(--sage-d)}
+.oval .badge b{font-weight:600;display:block}
+@media(max-width:900px){.hero-card{grid-template-columns:1fr;min-height:0;border-radius:28px}.hero-side{justify-items:center}.oval{width:250px}.oval .badge{left:-20px}}
+
+.ph{display:grid;place-items:center;background-size:cover;background-position:center}
+.ph-icon{display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(255,255,255,.8);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;text-align:center;padding:16px}
+.ph-icon svg{width:42px;height:42px}
+.ph.has-photo .ph-icon{display:none}
+
+/* ticker strip */
+.strip{display:flex;justify-content:center;gap:clamp(20px,5vw,70px);flex-wrap:wrap;padding:34px 20px;color:var(--soft);font-size:.9rem;letter-spacing:.06em}
+.strip span{display:flex;align-items:center;gap:10px}
+.strip svg{width:20px;height:20px;color:var(--gold)}
+
+/* diferencial: teste de pele */
+.skin{background:var(--paper-2)}
+.skin-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.skin-hl{background:var(--forest);color:var(--paper);border-radius:28px;padding:44px 40px;position:relative;overflow:hidden}
+.skin-hl::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;border:1px solid rgba(233,217,176,.3);right:-80px;top:-80px}
+.skin-hl .big{font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4vw,3rem);line-height:1.1;color:var(--gold-l)}
+.skin-hl p{color:#c9d2c5;margin-top:16px}
+.skin-hl .seal{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-l)}
+.skin-hl .seal svg{width:28px;height:28px}
+.steps{display:grid;gap:0;margin-top:34px;position:relative}
+.steps::before{content:"";position:absolute;left:27px;top:20px;bottom:20px;width:1px;background:linear-gradient(var(--gold),var(--sage-2))}
+.step{display:flex;gap:22px;padding:16px 0;position:relative}
+.step .n{width:56px;height:56px;border-radius:50%;background:var(--paper);border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--serif);font-size:1.3rem;font-style:italic;color:var(--sage-d);flex:none;position:relative;z-index:1}
+.step.hot .n{background:var(--gold);color:var(--forest);border-color:var(--gold);box-shadow:0 0 0 8px rgba(200,173,116,.18)}
+.step h3{font-size:1.45rem;margin:8px 0 4px}
+.step p{color:var(--soft);font-size:.96rem}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:50px}
+.val{background:var(--paper);border-radius:20px;padding:24px;border:1px solid rgba(143,165,142,.25)}
+.val svg{width:28px;height:28px;color:var(--sage-d)}
+.val h3{font-size:1.2rem;margin:12px 0 4px}
+.val p{font-size:.9rem;color:var(--soft)}
+@media(max-width:900px){.skin-grid{grid-template-columns:1fr;gap:40px}.vals{grid-template-columns:1fr}.skin-hl{padding:34px 26px}}
+
+/* tratamentos: lista elegante */
+.tr-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:46px}
+.tr-list{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;border-top:1px solid rgba(38,51,42,.15)}
+.tr{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:center;padding:26px 6px;border-bottom:1px solid rgba(38,51,42,.15);position:relative;transition:background .35s,padding .35s}
+.tr::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--sage-3),transparent);opacity:0;transition:opacity .35s;z-index:-1;border-radius:12px}
+.tr:hover{padding-left:16px}
+.tr:hover::before{opacity:1}
+.tr .ic{width:64px;height:64px;border-radius:50%;background:var(--sage-3);display:grid;place-items:center;color:var(--sage-d);transition:background .35s,color .35s}
+.tr:hover .ic{background:var(--forest);color:var(--gold-l)}
+.tr .ic svg{width:28px;height:28px}
+.tr h3{font-size:1.45rem}
+.tr p{font-size:.92rem;color:var(--soft)}
+@media(max-width:900px){.tr-head{grid-template-columns:1fr;gap:6px}.tr-list{grid-template-columns:1fr}}
+@media(max-width:520px){.tr{grid-template-columns:52px 1fr;gap:14px}.tr .ic{width:52px;height:52px}.tr .btn{grid-column:2;justify-self:start}}
+
+/* produtos: bento */
+.prod-sec{background:var(--forest);color:var(--paper);border-radius:40px;margin:0 14px}
+.prod-sec h2 em{color:var(--gold-l)}
+.prod-sec .tagline{color:var(--gold-l)}
+.prod-sec .lead{color:#b9c4b5}
+.bento{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:auto auto;gap:16px;margin-top:50px}
+.pc{border-radius:24px;padding:24px;display:flex;flex-direction:column;position:relative;overflow:hidden;background:#324136;transition:transform .4s}
+.pc:hover{transform:translateY(-6px)}
+.pc.big{grid-row:span 2;background:linear-gradient(160deg,#3b4c3f,#26332a)}
+.pc .shot{flex:1;min-height:150px;display:grid;place-items:center;margin-bottom:16px}
+.pc.big .shot{min-height:300px}
+.pc .shot svg{height:150px;width:auto;filter:drop-shadow(0 20px 20px rgba(0,0,0,.35));transition:transform .5s}
+.pc.big .shot svg{height:260px}
+.pc:hover .shot svg{transform:rotate(-5deg) scale(1.04)}
+.pc .k{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.pc h3{font-size:1.5rem;margin:4px 0 6px}
+.pc p{font-size:.9rem;color:#b9c4b5;margin-bottom:16px}
+.pc .btn{align-self:flex-start}
+.pc::after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(closest-side,rgba(200,173,116,.25),transparent);right:-60px;top:-60px}
+@media(max-width:1000px){.bento{grid-template-columns:1fr 1fr}.pc.big{grid-column:span 2;grid-row:auto}.pc.big .shot{min-height:200px}.pc.big .shot svg{height:190px}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}.pc.big{grid-column:auto}.prod-sec{margin:0 8px;border-radius:28px}}
+
+/* sobre */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-ph{position:relative}
+.about-ph .main{aspect-ratio:4/5;border-radius:220px 220px 24px 24px;overflow:hidden;position:relative}
+.about-ph .main .ph{position:absolute;inset:0;background:linear-gradient(170deg,#b9c8b4,#5f7560)}
+.about-ph .quote{position:absolute;right:-30px;bottom:40px;max-width:260px;background:var(--paper);border-radius:20px;padding:20px 22px;box-shadow:0 30px 60px -30px rgba(38,51,42,.5);font-family:var(--serif);font-style:italic;font-size:1.2rem;line-height:1.35}
+.about-ph .quote::before{content:"“";display:block;font-size:3rem;line-height:.6;color:var(--gold)}
+.about-ph .sprig{position:absolute;left:-40px;top:-30px;width:120px;color:var(--sage)}
+.about p{color:var(--soft);font-size:1.04rem;margin-bottom:16px}
+.about .facts{display:flex;gap:30px;margin:28px 0 34px;flex-wrap:wrap}
+.about .facts b{font-family:var(--serif);font-size:2.4rem;font-weight:400;color:var(--sage-d);display:block;line-height:1}
+.about .facts span{font-size:.8rem;color:var(--soft);letter-spacing:.06em}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:50px}.about-ph{max-width:400px;margin-inline:auto;width:100%}.about-ph .quote{right:-10px}}
+
+/* galeria: comparador */
+.gal-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:50px}
+.compare{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;user-select:none;touch-action:pan-y}
+.compare .ph{position:absolute;inset:0}
+.compare .after{background:linear-gradient(140deg,#dde6d8,#8fa58e)}
+.compare .before{background:linear-gradient(140deg,#c7b9a3,#8a8a74);clip-path:inset(0 50% 0 0)}
+.compare .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}
+.compare .handle::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 10px 30px rgba(0,0,0,.25);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234f6450' stroke-width='2'%3E%3Cpath d='m9 6-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E");background-size:26px;background-repeat:no-repeat;background-position:center}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare .lb{position:absolute;top:16px;padding:6px 14px;border-radius:100px;background:rgba(38,51,42,.75);color:#fff;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;pointer-events:none}
+.compare .lb.l{left:16px}.compare .lb.r{right:16px}
+.gal-side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gs{border-radius:22px;overflow:hidden;position:relative;min-height:150px}
+.gs .ph{position:absolute;inset:0;transition:transform .7s}
+.gs:hover .ph{transform:scale(1.06)}
+.gs .t{position:absolute;left:12px;bottom:12px;background:rgba(251,250,245,.92);color:var(--forest);font-size:.76rem;font-weight:500;padding:5px 12px;border-radius:100px}
+.s1{background:linear-gradient(160deg,#b9c8b4,#4f6450)}
+.s2{background:linear-gradient(160deg,#e9d9b0,#a58c58)}
+.s3{background:linear-gradient(160deg,#dde6d8,#7f977f)}
+.s4{background:linear-gradient(160deg,#c8ad74,#4f6450)}
+@media(max-width:900px){.gal-wrap{grid-template-columns:1fr}.gal-side{grid-template-rows:repeat(2,160px)}}
+
+/* depoimentos */
+.dep-track{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.dep{background:#fff;border-radius:26px;padding:34px 30px;border:1px solid rgba(143,165,142,.25);display:flex;flex-direction:column;transition:transform .4s,box-shadow .4s}
+.dep:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(38,51,42,.35)}
+.dep .s{color:var(--gold);letter-spacing:3px;font-size:1.1rem}
+.dep blockquote{font-family:var(--serif);font-size:1.35rem;line-height:1.4;margin:14px 0 24px;flex:1}
+.dep .w{display:flex;gap:10px;align-items:center;font-size:.85rem;color:var(--soft)}
+.dep .w .g{width:32px;height:32px;border-radius:50%;background:var(--paper-2);display:grid;place-items:center}
+.dots{display:none;justify-content:center;gap:8px;margin-top:18px}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--sage-2);transition:.3s}
+.dots i.on{background:var(--sage-d);width:22px;border-radius:5px}
+@media(max-width:900px){.dep-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-20px;padding:0 20px 10px;scrollbar-width:none}.dep-track::-webkit-scrollbar{display:none}.dep{flex:0 0 86%;scroll-snap-align:center}.dots{display:flex}}
+.rate{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:44px;color:var(--soft);flex-wrap:wrap}
+.rate b{font-family:var(--serif);font-size:3.6rem;color:var(--forest);font-weight:400;line-height:1}
+
+/* instagram */
+.insta{background:var(--paper-2)}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:44px 0 34px}
+.ig{aspect-ratio:1;border-radius:18px;overflow:hidden;position:relative}
+.ig .ph{position:absolute;inset:0;transition:transform .6s}
+.ig:hover .ph{transform:scale(1.08)}
+.ig:nth-child(1) .ph{background:linear-gradient(135deg,#b9c8b4,#4f6450)}
+.ig:nth-child(2) .ph{background:linear-gradient(135deg,#e9d9b0,#c8ad74)}
+.ig:nth-child(3) .ph{background:linear-gradient(135deg,#dde6d8,#8fa58e)}
+.ig:nth-child(4) .ph{background:linear-gradient(135deg,#8fa58e,#26332a)}
+.ig:nth-child(5) .ph{background:linear-gradient(135deg,#f3f1e8,#b9c8b4)}
+.ig:nth-child(6) .ph{background:linear-gradient(135deg,#c8ad74,#5f7560)}
+.ig .o{position:absolute;inset:0;display:grid;place-items:center;background:rgba(38,51,42,.45);opacity:0;transition:.3s;color:#fff}
+.ig:hover .o{opacity:1}
+.ig .o svg{width:30px;height:30px}
+@media(max-width:820px){.ig-grid{grid-template-columns:repeat(3,1fr);gap:8px}}
+
+/* local */
+.loc{display:grid;grid-template-columns:1.15fr .85fr;border-radius:32px;overflow:hidden;background:#fff;box-shadow:0 40px 80px -50px rgba(38,51,42,.45)}
+.loc .map{position:relative;min-height:500px}
+.loc iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.7) hue-rotate(-10deg)}
+.loc .info{padding:46px 40px}
+.loc h3{font-size:2rem;margin:12px 0 26px}
+.row{display:flex;gap:16px;margin-bottom:22px}
+.row svg{width:24px;height:24px;color:var(--sage-d);flex:none;margin-top:2px}
+.row small{display:block;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.row dl{display:grid;grid-template-columns:auto 1fr;gap:2px 16px}
+.row dt{font-weight:500}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.86rem;background:var(--sage-3);padding:7px 14px;border-radius:100px;margin-bottom:20px}
+.status i{width:8px;height:8px;border-radius:50%;background:#999}
+.status.on i{background:#3aa55d;box-shadow:0 0 0 4px rgba(58,165,93,.2)}
+@media(max-width:900px){.loc{grid-template-columns:1fr}.loc .map{min-height:320px;order:2}.loc .info{padding:32px 24px}}
+
+/* cta */
+.cta{padding-top:20px}
+.cta-in{border-radius:40px;background:radial-gradient(80% 120% at 50% 0%,#8fa58e,#4f6450 60%,#26332a);color:#fff;text-align:center;padding:clamp(70px,10vw,120px) 24px;position:relative;overflow:hidden;isolation:isolate}
+.cta-in .leaf{position:absolute;z-index:-1;color:rgba(255,255,255,.08);width:420px}
+.cta-in .leaf.a{left:-120px;top:-60px;transform:rotate(-30deg)}
+.cta-in .leaf.b{right:-120px;bottom:-120px;transform:rotate(150deg)}
+.cta-in h2{font-size:clamp(2.8rem,7.4vw,6rem);max-width:13ch;margin-inline:auto}
+.cta-in h2 em{color:var(--gold-l)}
+.cta-in p{color:rgba(255,255,255,.85);max-width:46ch;margin:0 auto 34px;font-size:1.1rem}
+.cta-in .tagline{color:var(--gold-l)}
+
+footer{padding:70px 0 110px;color:var(--soft);font-size:.93rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(38,51,42,.12)}
+footer h4{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-d);margin-bottom:14px;font-weight:500}
+footer li{list-style:none;margin-bottom:8px}
+footer a:hover{color:var(--sage-d)}
+.copy{padding-top:22px;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:760px){.foot{grid-template-columns:1fr}}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:20px;background:#25d366;display:grid;place-items:center;color:#fff;box-shadow:0 14px 30px -10px rgba(37,211,102,.7);animation:fabp 2.4s infinite}
+.fab svg{width:32px;height:32px}
+.fab b{position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--forest);font-size:.7rem;display:grid;place-items:center;font-weight:700;border:2px solid var(--paper)}
+@keyframes fabp{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 14px 30px -10px rgba(37,211,102,.7)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0),0 14px 30px -10px rgba(37,211,102,.7)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 14px 30px -10px rgba(37,211,102,.7)}}
+
+.rv{opacity:0;transform:translateY(30px);filter:blur(6px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1),filter 1s}
+.rv.in{opacity:1;transform:none;filter:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none;filter:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf" viewBox="0 0 200 200"><path fill="currentColor" d="M100 10C60 40 30 90 40 150c5 30 30 40 60 40s55-10 60-40c10-60-20-110-60-140zm0 20v160" /><path d="M100 30v160M100 70l-30-20M100 100l-40-25M100 130l-38-22M100 70l30-20M100 100l40-25M100 130l38-22" stroke="rgba(255,255,255,.35)" stroke-width="2" fill="none"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="g" viewBox="0 0 48 48"><path fill="#4285F4" d="M44 24c0-1.3-.1-2.4-.4-3.5H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C41.5 35.6 44 30.3 44 24z"/><path fill="#34A853" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#FBBC05" d="M12.7 28c-.4-1.2-.7-2.6-.7-4s.3-2.8.7-4l-6.5-5C4.8 17.7 4 20.8 4 24s.8 6.3 2.2 9z"/><path fill="#EA4335" d="M24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.2 4 9.5 8.4 6.2 15l6.5 5C14.4 15.3 18.8 12 24 12z"/></symbol>
+  <symbol id="sprig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 22V6"/><path d="M12 10c-3 0-5-2-5-5 3 0 5 2 5 5zM12 14c3 0 5-2 5-5-3 0-5 2-5 5zM12 18c-3 0-5-2-5-5 3 0 5 2 5 5z"/></g></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="logo"><span class="mk">S</span><span><b>Samanta Morgenstern</b><small>Estética · Caçador</small></span></a>
+    <nav class="nav-links"><a href="#diferencial">Teste de pele</a><a href="#tratamentos">Tratamentos</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#local">Contato</a></nav>
+    <a class="btn btn-forest btn-sm" data-wa="Oi Samanta! Vi o site e gostaria de agendar um horário." href="https://wa.me/5549999592359">Agendar</a>
+  </div>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <svg class="leaf l1"><use href="#leaf"/></svg>
+      <svg class="leaf l2"><use href="#leaf"/></svg>
+      <div>
+        <a href="#depoimentos" class="pill rv"><span class="g"><svg width="15" height="15"><use href="#g"/></svg></span><span class="s">★★★★★</span><span><b>5,0 no Google</b> · 57 avaliações</span></a>
+        <h1 class="rv d1">Sua pele, <em>cuidada</em> em cada detalhe.</h1>
+        <p class="lead rv d2">Estética em Caçador com um diferencial que faz toda a diferença: teste de pele antes do procedimento. Mais segurança para você, resultados impecáveis para a sua pele.</p>
+        <div class="hero-cta rv d3">
+          <a class="btn btn-gold" data-wa="Oi Samanta! Vi o site e quero agendar uma avaliação." href="#"><svg><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
+          <a class="btn btn-light" href="#diferencial">Como funciona</a>
+        </div>
+      </div>
+      <div class="hero-side rv d2">
+        <div class="oval">
+          <div class="ph" data-photo="fotos/hero.jpg"><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Foto Samanta</div></div>
+          <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M7.5 15h9"/></svg><div><b>Teste de pele</b>antes de cada procedimento</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <span><svg><use href="#sprig"/></svg>Teste de pele prévio</span>
+  <span><svg><use href="#sprig"/></svg>Ambiente lindo e acolhedor</span>
+  <span><svg><use href="#sprig"/></svg>Resultados impecáveis</span>
+  <span><svg><use href="#sprig"/></svg>Seg a sáb</span>
+</div>
+
+<section class="skin" id="diferencial">
+  <div class="wrap">
+    <div class="skin-grid">
+      <div class="skin-hl rv">
+        <span class="tagline" style="color:var(--gold-l)"><svg><use href="#sprig"/></svg>Nosso diferencial</span>
+        <p class="big" style="margin-top:18px">Antes de tratar a sua pele, a gente conhece ela.</p>
+        <p>Cada pele reage de um jeito. Por isso, a Samanta faz um teste de pele antes do procedimento — para escolher os ativos certos, evitar reações e garantir um resultado seguro e bonito.</p>
+        <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Segurança em primeiro lugar</span>
+      </div>
+      <div>
+        <span class="tagline rv"><svg><use href="#sprig"/></svg>Como funciona</span>
+        <h2 class="rv d1">Três passos para um <em>resultado impecável</em></h2>
+        <div class="steps">
+          <div class="step rv"><span class="n">1</span><div><h3>Avaliação</h3><p>Conversa sem pressa para entender sua pele, rotina e o que você deseja.</p></div></div>
+          <div class="step hot rv d1"><span class="n">2</span><div><h3>Teste de pele</h3><p>Aplicação prévia dos produtos para checar sensibilidade e reação. Nada de surpresas.</p></div></div>
+          <div class="step rv d2"><span class="n">3</span><div><h3>Procedimento</h3><p>Tratamento personalizado, com cuidado em cada detalhe — e orientações para casa.</p></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="vals">
+      <div class="val rv"><svg><use href="#sprig"/></svg><h3>Ambiente acolhedor</h3><p>Um espaço lindo, calmo e pensado para você relaxar.</p></div>
+      <div class="val rv d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7.5-4.6-9.5-9.3C1 8 3.5 4.5 7 4.5c2 0 3.5 1.2 5 3 1.5-1.8 3-3 5-3 3.5 0 6 3.5 4.5 7.2C19.5 16.4 12 21 12 21z"/></svg><h3>Atenciosa e alegre</h3><p>Atendimento leve, próximo e cheio de atenção.</p></div>
+      <div class="val rv d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/></svg><h3>Resultados impecáveis</h3><p>É o que mais aparece nas avaliações das clientes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tratamentos">
+  <div class="wrap">
+    <div class="tr-head">
+      <div><span class="tagline rv"><svg><use href="#sprig"/></svg>Tratamentos</span><h2 class="rv d1">Cuidados para <em>face e corpo</em></h2></div>
+      <p class="lead rv d2">Todos começam com avaliação e teste de pele. Toque em “Quero esse” e a mensagem já vai pronta no WhatsApp.</p>
+    </div>
+    <div class="tr-list">
+      <div class="tr rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"/></svg></span><div><h3>Limpeza de Pele</h3><p>Poros limpos, pele leve e luminosa.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Limpeza de Pele" href="#">Quero esse</a></div>
+      <div class="tr rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18 18 4"/><path d="M14 4h4v4"/><circle cx="7" cy="7" r="1.2"/></svg></span><div><h3>Peeling</h3><p>Renovação para textura e tom uniformes.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Peeling" href="#">Quero esse</a></div>
+      <div class="tr rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="9" width="16" height="6" rx="3"/><path d="M7 15v3M10 15v3M13 15v3M16 15v3"/></svg></span><div><h3>Microagulhamento</h3><p>Colágeno para cicatrizes e linhas finas.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Microagulhamento" href="#">Quero esse</a></div>
+      <div class="tr rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 17c3-4 6-4 9 0s6 4 9 0"/></svg></span><div><h3>Drenagem Linfática</h3><p>Menos inchaço, mais leveza e bem-estar.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Drenagem Linfática" href="#">Quero esse</a></div>
+      <div class="tr rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 3c-2 4-2 7 0 9s2 6 0 9"/><path d="M16 3c2 4 2 7 0 9s-2 6 0 9"/></svg></span><div><h3>Massagem Modeladora</h3><p>Contorno definido e circulação ativada.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Massagem Modeladora" href="#">Quero esse</a></div>
+      <div class="tr rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></span><div><h3>Tratamento de Manchas</h3><p>Melasma e manchas: tom mais uniforme.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Tratamento de Manchas" href="#">Quero esse</a></div>
+      <div class="tr rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/></svg></span><div><h3>Rejuvenescimento Facial</h3><p>Firmeza e viço com naturalidade.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Rejuvenescimento Facial" href="#">Quero esse</a></div>
+      <div class="tr rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 3c0 3-2 4-2 8 0 3 1 5 1 10"/><path d="M15 3c0 3 2 4 2 8 0 3-1 5-1 10"/><path d="M9.5 12h5"/></svg></span><div><h3>Protocolos Corporais</h3><p>Planos para celulite, flacidez e medidas.</p></div><a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi no site e quero saber sobre Protocolos Corporais" href="#">Quero esse</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="prod-sec" id="produtos">
+  <div class="wrap">
+    <span class="tagline rv"><svg><use href="#sprig"/></svg>Dermocosméticos</span>
+    <h2 class="rv d1">Skincare indicado <em>pela Samanta</em></h2>
+    <p class="lead rv d2">Os produtos certos para manter o resultado em casa. Encomende pelo WhatsApp e retire na clínica.</p>
+    <div class="bento">
+      <article class="pc big rv"><div class="shot"><svg viewBox="0 0 80 160"><rect x="33" y="4" width="14" height="22" rx="4" fill="#e9d9b0"/><rect x="28" y="24" width="24" height="8" fill="#c8ad74"/><rect x="16" y="32" width="48" height="124" rx="12" fill="#e9a23b"/><rect x="22" y="76" width="36" height="40" rx="4" fill="#fbfaf5"/><text x="40" y="93" text-anchor="middle" font-family="Bodoni Moda" font-size="9" fill="#4f6450">SÉRUM</text><text x="40" y="107" text-anchor="middle" font-family="Bodoni Moda" font-size="11" fill="#26332a">Vit. C</text></svg></div><span class="k">Mais pedido</span><h3>Sérum Vitamina C</h3><p>Ilumina, uniformiza e protege a pele dos danos do dia a dia.</p><a class="btn btn-gold btn-sm" data-wa="Oi Samanta! Vi no site e quero encomendar o Sérum Vitamina C" href="#">Encomendar pelo WhatsApp</a></article>
+      <article class="pc rv d1"><div class="shot"><svg viewBox="0 0 80 140"><rect x="24" y="6" width="32" height="18" rx="4" fill="#e9d9b0"/><rect x="14" y="22" width="52" height="112" rx="14" fill="#fbfaf5"/><text x="40" y="82" text-anchor="middle" font-family="Bodoni Moda" font-size="11" fill="#4f6450">FPS 50</text></svg></div><span class="k">Proteção</span><h3>Protetor Solar</h3><p>Toque seco, uso diário.</p><a class="btn btn-gold btn-sm" data-wa="Oi Samanta! Vi no site e quero encomendar o Protetor Solar" href="#">Encomendar pelo WhatsApp</a></article>
+      <article class="pc rv d2"><div class="shot"><svg viewBox="0 0 80 140"><circle cx="40" cy="14" r="9" fill="#e9d9b0"/><rect x="34" y="20" width="12" height="12" fill="#e9d9b0"/><rect x="20" y="32" width="40" height="102" rx="8" fill="#dde6d8"/><text x="40" y="84" text-anchor="middle" font-family="Bodoni Moda" font-size="8" fill="#26332a">hialurônico</text></svg></div><span class="k">Hidratação profunda</span><h3>Ácido Hialurônico</h3><p>Viço e preenchimento de linhas finas.</p><a class="btn btn-gold btn-sm" data-wa="Oi Samanta! Vi no site e quero encomendar o Ácido Hialurônico" href="#">Encomendar pelo WhatsApp</a></article>
+      <article class="pc rv d1"><div class="shot"><svg viewBox="0 0 80 140"><rect x="8" y="60" width="64" height="20" rx="6" fill="#e9d9b0"/><rect x="8" y="78" width="64" height="56" rx="10" fill="#fbfaf5"/><text x="40" y="111" text-anchor="middle" font-family="Bodoni Moda" font-size="9" fill="#4f6450">hidratante</text></svg></div><span class="k">Nutrição</span><h3>Hidratante Facial</h3><p>Conforto e barreira protegida.</p><a class="btn btn-gold btn-sm" data-wa="Oi Samanta! Vi no site e quero encomendar o Hidratante Facial" href="#">Encomendar pelo WhatsApp</a></article>
+      <article class="pc rv d2"><div class="shot"><svg viewBox="0 0 80 140"><rect x="30" y="8" width="20" height="10" rx="2" fill="#e9d9b0"/><path d="M34 18h12l2 10H32z" fill="#e9d9b0"/><rect x="14" y="28" width="52" height="106" rx="16" fill="#b9c8b4"/><text x="40" y="86" text-anchor="middle" font-family="Bodoni Moda" font-size="9" fill="#26332a">sabonete</text></svg></div><span class="k">Limpeza</span><h3>Sabonete Facial</h3><p>Limpeza suave, sem ressecar.</p><a class="btn btn-gold btn-sm" data-wa="Oi Samanta! Vi no site e quero encomendar o Sabonete Facial" href="#">Encomendar pelo WhatsApp</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-ph rv">
+      <svg class="sprig"><use href="#sprig"/></svg>
+      <div class="main"><div class="ph" data-photo="fotos/samanta.jpg"><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Foto da Samanta</div></div></div>
+      <div class="quote">Cuidar da pele é cuidar de quem você é.</div>
+    </div>
+    <div>
+      <span class="tagline rv"><svg><use href="#sprig"/></svg>Sobre a profissional</span>
+      <h2 class="rv d1">Prazer, <em>Samanta Morgenstern.</em></h2>
+      <p class="rv d2">Sou apaixonada por estética e por ver minhas clientes se olharem no espelho com mais confiança. Para mim, cada atendimento é único — e cada detalhe importa.</p>
+      <p class="rv d2">Foi por isso que adotei o teste de pele antes dos procedimentos: quero que você se sinta segura do começo ao fim, num ambiente bonito, leve e acolhedor, com resultados que falam por si.</p>
+      <div class="facts rv d3"><div><b>5,0</b><span>nota no Google</span></div><div><b>57</b><span>avaliações</span></div><div><b>100%</b><span>com teste de pele</span></div></div>
+      <a class="btn btn-forest rv d3" data-wa="Oi Samanta! Vi o site e queria conversar sobre um tratamento." href="#"><svg><use href="#wa"/></svg>Conversar com a Samanta</a>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" style="padding-top:0">
+  <div class="wrap">
+    <div class="c"><span class="tagline rv"><svg><use href="#sprig"/></svg>Galeria</span><h2 class="rv d1">Antes & <em>depois</em></h2><p class="lead rv d2">Arraste a barra para comparar. Resultados reais de clientes da clínica.</p></div>
+    <div class="gal-wrap">
+      <div class="compare rv" id="compare">
+        <div class="ph after" data-photo="fotos/depois.jpg"><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/></svg></div></div>
+        <div class="ph before" data-photo="fotos/antes.jpg"></div>
+        <span class="lb l">Antes</span><span class="lb r">Depois</span>
+        <div class="handle"></div>
+        <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+      </div>
+      <div class="gal-side">
+        <div class="gs rv d1"><div class="ph s1" data-photo="fotos/galeria-1.jpg"></div><span class="t">Facial</span></div>
+        <div class="gs rv d2"><div class="ph s2" data-photo="fotos/galeria-2.jpg"></div><span class="t">Manchas</span></div>
+        <div class="gs rv d1"><div class="ph s3" data-photo="fotos/galeria-3.jpg"></div><span class="t">Corporal</span></div>
+        <div class="gs rv d2"><div class="ph s4" data-photo="fotos/galeria-4.jpg"></div><span class="t">Ambiente</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" style="padding-top:0">
+  <div class="wrap">
+    <div class="c"><span class="tagline rv"><svg><use href="#sprig"/></svg>Depoimentos</span><h2 class="rv d1">Palavras de quem <em>já viveu</em></h2></div>
+    <div class="dep-track" id="track">
+      <article class="dep rv"><span class="s">★★★★★</span><blockquote>“Ela faz teste de pele antes do procedimento — nunca tinha visto esse cuidado. Me senti muito segura.”</blockquote><div class="w"><span class="g"><svg width="16" height="16"><use href="#g"/></svg></span>Cliente verificada no Google</div></article>
+      <article class="dep rv d1"><span class="s">★★★★★</span><blockquote>“Ambiente lindo e acolhedor, cuidado em cada detalhe. O resultado ficou impecável.”</blockquote><div class="w"><span class="g"><svg width="16" height="16"><use href="#g"/></svg></span>Cliente verificada no Google</div></article>
+      <article class="dep rv d2"><span class="s">★★★★★</span><blockquote>“Profissional super atenciosa e alegre. Dá gosto ir na clínica, saio sempre renovada.”</blockquote><div class="w"><span class="g"><svg width="16" height="16"><use href="#g"/></svg></span>Cliente verificada no Google</div></article>
+    </div>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+    <div class="rate rv"><b>5,0</b><div><div style="color:var(--gold);letter-spacing:3px">★★★★★</div>57 avaliações no Google</div></div>
+  </div>
+</section>
+
+<section class="insta c" id="instagram">
+  <div class="wrap">
+    <span class="tagline rv"><svg><use href="#ig"/></svg>Instagram</span>
+    <h2 class="rv d1">Siga <em class="ig-handle">@INSTAGRAM</em></h2>
+    <p class="lead rv d2">Rotina de skincare, bastidores e os resultados mais recentes.</p>
+    <div class="ig-grid">
+      <a class="ig ig-link rv" href="#"><div class="ph" data-photo="fotos/insta-1.jpg"></div><span class="o"><svg><use href="#ig"/></svg></span></a>
+      <a class="ig ig-link rv d1" href="#"><div class="ph" data-photo="fotos/insta-2.jpg"></div><span class="o"><svg><use href="#ig"/></svg></span></a>
+      <a class="ig ig-link rv d2" href="#"><div class="ph" data-photo="fotos/insta-3.jpg"></div><span class="o"><svg><use href="#ig"/></svg></span></a>
+      <a class="ig ig-link rv" href="#"><div class="ph" data-photo="fotos/insta-4.jpg"></div><span class="o"><svg><use href="#ig"/></svg></span></a>
+      <a class="ig ig-link rv d1" href="#"><div class="ph" data-photo="fotos/insta-5.jpg"></div><span class="o"><svg><use href="#ig"/></svg></span></a>
+      <a class="ig ig-link rv d2" href="#"><div class="ph" data-photo="fotos/insta-6.jpg"></div><span class="o"><svg><use href="#ig"/></svg></span></a>
+    </div>
+    <a class="btn btn-forest ig-link rv" href="#"><svg><use href="#ig"/></svg>Ver perfil no Instagram</a>
+  </div>
+</section>
+
+<section id="local">
+  <div class="wrap">
+    <div class="loc rv">
+      <div class="map"><iframe title="Mapa Estética Samanta Morgenstern" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Bar%C3%A3o+do+Rio+Branco%2C+309+-+Centro%2C+Ca%C3%A7ador+-+SC%2C+89500-145&output=embed"></iframe></div>
+      <div class="info">
+        <span class="tagline"><svg><use href="#sprig"/></svg>Visite a clínica</span>
+        <h3>Centro de Caçador</h3>
+        <div class="status" id="status"><i></i><span>Seg a sex 8h–21h · Sáb 8h–16h30</span></div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><small>Endereço</small>Av. Barão do Rio Branco, 309 – Sala 03 – Centro, Caçador – SC, 89500-145</div></div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Horário</small><dl><dt>Seg a sex</dt><dd>8h – 21h</dd><dt>Sábado</dt><dd>8h – 16h30</dd></dl></div></div>
+        <div class="row"><svg><use href="#wa"/></svg><div><small>WhatsApp</small><a data-wa="Oi Samanta! Vi o site e gostaria de mais informações." href="#">(49) 99959-2359</a></div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+          <a class="btn btn-forest btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Bar%C3%A3o+do+Rio+Branco%2C+309+-+Centro%2C+Ca%C3%A7ador+-+SC%2C+89500-145">Como chegar</a>
+          <a class="btn btn-out btn-sm" data-wa="Oi Samanta! Vi o site e gostaria de agendar." href="#">Agendar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-in rv">
+      <svg class="leaf a"><use href="#leaf"/></svg><svg class="leaf b"><use href="#leaf"/></svg>
+      <span class="tagline"><svg><use href="#sprig"/></svg>Sua pele merece</span>
+      <h2>Agende sua <em>avaliação</em></h2>
+      <p>Avaliação, teste de pele e um plano feito para você. Chame a Samanta no WhatsApp.</p>
+      <a class="btn btn-gold" style="font-size:1.05rem;padding:20px 36px" data-wa="Oi Samanta! Vi o site e quero agendar minha avaliação." href="#"><svg><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a href="#topo" class="logo"><span class="mk">S</span><span><b>Samanta Morgenstern</b><small>Estética</small></span></a><p style="margin-top:16px;max-width:34ch">Estética em Caçador/SC com teste de pele antes de cada procedimento.</p></div>
+      <div><h4>Contato</h4><ul><li><a data-wa="Oi Samanta! Vi o site e gostaria de mais informações." href="#">WhatsApp (49) 99959-2359</a></li><li><a class="ig-link ig-handle" href="#">@INSTAGRAM</a></li></ul></div>
+      <div><h4>Endereço</h4><p>Av. Barão do Rio Branco, 309<br>Sala 03 · Centro<br>Caçador – SC</p></div>
+    </div>
+    <div class="copy"><span>© <span class="yr">2026</span> Estética Samanta Morgenstern. Todos os direitos reservados.</span><span>Cuidado em cada detalhe</span></div>
+  </div>
+</footer>
+
+<a class="fab" data-wa="Oi Samanta! Vi o site e gostaria de agendar um horário." href="#" aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg><b>1</b></a>
+
+<script>
+/* ====== CONFIGURAÇÃO — troque aqui ====== */
+const CONFIG = {
+  whatsapp: '5549999592359',
+  instagram: 'INSTAGRAM' // ex.: 'esteticasamantamorgenstern' (sem @)
+};
+const HORARIO = {1:[[8,21]],2:[[8,21]],3:[[8,21]],4:[[8,21]],5:[[8,21]],6:[[8,16.5]]};
+/* ======================================== */
+(function(){
+  const wa = m => 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(m);
+  document.querySelectorAll('[data-wa]').forEach(a => { a.href = wa(a.dataset.wa); a.target = '_blank'; a.rel = 'noopener'; });
+  document.querySelectorAll('.ig-link').forEach(a => { a.href = 'https://instagram.com/' + CONFIG.instagram; a.target = '_blank'; a.rel = 'noopener'; });
+  document.querySelectorAll('.ig-handle').forEach(el => el.textContent = '@' + CONFIG.instagram);
+  document.querySelectorAll('.yr').forEach(el => el.textContent = new Date().getFullYear());
+  document.querySelectorAll('[data-photo]').forEach(el => {
+    const img = new Image();
+    img.onload = () => { el.style.backgroundImage = 'url("' + el.dataset.photo + '")'; el.classList.add('has-photo'); };
+    img.src = el.dataset.photo;
+  });
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 30);
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+  // comparador antes/depois
+  const cmp = document.getElementById('compare');
+  const range = cmp.querySelector('input'), before = cmp.querySelector('.before'), handle = cmp.querySelector('.handle');
+  const setCmp = v => { before.style.clipPath = 'inset(0 ' + (100 - v) + '% 0 0)'; handle.style.left = v + '%'; };
+  range.addEventListener('input', e => setCmp(e.target.value)); setCmp(50);
+  // dots do carrossel (mobile)
+  const track = document.getElementById('track'), dots = document.querySelectorAll('#dots i');
+  track.addEventListener('scroll', () => {
+    const i = Math.round(track.scrollLeft / (track.scrollWidth - track.clientWidth) * (dots.length - 1)) || 0;
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+  }, {passive:true});
+  // aberto agora
+  try {
+    const p = new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    const g = t => p.find(x => x.type === t).value;
+    const d = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+    const h = (+g('hour') % 24) + (+g('minute')) / 60;
+    const open = (HORARIO[d] || []).some(([a,b]) => h >= a && h < b);
+    const el = document.getElementById('status');
+    el.classList.toggle('on', open);
+    el.querySelector('span').textContent = open ? 'Aberto agora' : 'Fechado agora · chame no WhatsApp';
+  } catch(e) {}
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>

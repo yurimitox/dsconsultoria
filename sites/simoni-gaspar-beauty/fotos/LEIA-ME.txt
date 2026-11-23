@@ -1,0 +1,28 @@
+FOTOS DO SITE
+=============
+Coloque as fotos nesta pasta com EXATAMENTE estes nomes (formato .jpg).
+Cada foto que existir aparece sozinha no lugar do quadro com gradiente.
+Se uma foto não existir, o site continua mostrando o gradiente elegante.
+
+Arquivos aceitos:
+  - galeria-1.jpg
+  - galeria-2.jpg
+  - galeria-3.jpg
+  - galeria-4.jpg
+  - galeria-5.jpg
+  - galeria-6.jpg
+  - hero.jpg
+  - insta-1.jpg
+  - insta-2.jpg
+  - insta-3.jpg
+  - insta-4.jpg
+  - insta-5.jpg
+  - insta-6.jpg
+  - simoni.jpg
+
+Dicas:
+- Use fotos com autorização da clínica (de preferência enviadas por ela).
+- Tamanho ideal: até 1600 px no lado maior, até 400 KB cada.
+- Depois é só arrastar a pasta inteira da clínica no Netlify Drop.
+
+Instagram: no fim do index.html, troque 'INSTAGRAM' pelo @ real (sem o @).
